@@ -1,13 +1,11 @@
 body {
     display: flex;
-    width: 1440px;
-    height: 906px;
 }
 
 
 body > header > div {
     width: 100px;
-    height: 906px;
+    height: 100vh;
     left: 0px;
     top: calc(50% - 906px/2);
     background: #F7F6FF;
@@ -21,14 +19,19 @@ body > header > div {
 header > div > img {
     display: flex;
     padding-top: 20px;
-    margin-left: 18px;
+    margin-left: 35px;
     padding-bottom: 20px;
+}
+
+header > div > img:first-child {
+    margin-left: 18px;
+    transition: all 0.5s;
 }
 
 .nav-link {
     position: absolute;
     font-size: 16px;
-    margin-left: 70px;
+    margin-left: 85px;
     margin-top: -40px;
     text-decoration: none;
     color: transparent;
@@ -50,16 +53,20 @@ header > div:hover a:hover {
     text-decoration: underline;
 }
 
+header > div:hover img:first-child {
+    margin-left: 65px;
+}
+
 .nav-line {
     width: 62.24px;
     height: 0px;
     margin-left: 18px;
     border-bottom: 2px solid #c4c4c4;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 header > div:hover .nav-line {
-    width: 128.22px;
+    width: 170px;
 }
 
 .footer-line {
@@ -67,15 +74,15 @@ header > div:hover .nav-line {
     display: flex;
     width: 346px;
     height: 0px;
-    margin-left: 547px;
-    margin-top: 871px;
+    left: 45%;
+    top: 97%;
     border: 1px solid #02577a;
 }
 
 .footer-text {
     position: absolute;
-    margin-left: 645px;
-    margin-top: 882px;
+    left: 50%;
+    top: 98%;
     font-size: 11px;
     line-height: 13px;
     color: #02577a;
